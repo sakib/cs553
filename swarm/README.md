@@ -15,6 +15,8 @@ Once you have your swarm, in this directory run:
 docker stack deploy -c docker-stack.yml voteswarm
 ```
 
+To update any part of the app, edit the docker-stack.yml file and run deploy again.
+
 Architecture
 -----
 
