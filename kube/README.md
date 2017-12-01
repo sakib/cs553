@@ -1,5 +1,6 @@
 // setup kubernetes cluster with kops (aws) or minikube (local, single-node)
 // google it
+kops validate cluster
 
 // if deployment/service yaml files don't exist...
 kompose convert -f docker-stack-k8s.yml
@@ -19,3 +20,6 @@ kubectl create -f .
 // gentle rolling updates
 kubectl get deployments // see name-of-deployment
 kubectl edit deployment/<name-of-deployment>
+
+// scaling service is as simple as adding nodes to cluster:
+kops edit ig nodes
