@@ -13,8 +13,8 @@ The app will be running at [http://localhost:5000](http://localhost:5000), and t
 
 <subdirectory> contains instructions for deploying this app, composed of 5 microservices, to <container-deployment-infrastructure>:
   - `swarm` -> Docker Swarm
-  - `kube` -> Kubernetes
-  - `mesos` -> Mesos/Marathon
+  - `kuber` -> Kubernetes
+  - `nomad` -> Nomad
 
 All of these have been successfully run on small clusters AWS EC2 instances.
 
